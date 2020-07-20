@@ -1,24 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mzq-qM-hca">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5GT-by-auo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Mzq-qM-hca" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8mg-vH-woV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="desserts-background_1067-57" translatesAutoresizingMaskIntoConstraints="NO" id="71h-qH-mVc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9346732497215271" green="0.81593203544616699" blue="0.68935102224349976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert Opinions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v30-a1-Iek">
+                                <rect key="frame" x="73" y="56" width="228" height="60"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJy-Qg-M82">
+                                <rect key="frame" x="108" y="555" width="158" height="60"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <state key="normal" title="Take Quiz">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XNC-zW-56G" kind="show" id="7hC-KA-VgH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v30-a1-Iek" firstAttribute="top" secondItem="URD-Ou-5ys" secondAttribute="top" constant="56" id="1QL-9I-QXM"/>
+                            <constraint firstItem="EJy-Qg-M82" firstAttribute="top" secondItem="v30-a1-Iek" secondAttribute="bottom" constant="439" id="6UQ-pn-ZPd"/>
+                            <constraint firstItem="EJy-Qg-M82" firstAttribute="leading" secondItem="URD-Ou-5ys" secondAttribute="leading" constant="108" id="6ab-5i-VXL"/>
+                            <constraint firstItem="v30-a1-Iek" firstAttribute="leading" secondItem="URD-Ou-5ys" secondAttribute="leading" constant="73" id="Gp1-ZE-Q3K"/>
+                            <constraint firstItem="EJy-Qg-M82" firstAttribute="top" secondItem="v30-a1-Iek" secondAttribute="bottom" constant="439" id="MrU-2Y-4Yh"/>
+                            <constraint firstItem="URD-Ou-5ys" firstAttribute="trailing" secondItem="EJy-Qg-M82" secondAttribute="trailing" constant="109" id="N48-Df-xYh"/>
+                            <constraint firstItem="URD-Ou-5ys" firstAttribute="bottom" secondItem="EJy-Qg-M82" secondAttribute="bottom" constant="52" id="W0m-4g-XuT"/>
+                            <constraint firstItem="URD-Ou-5ys" firstAttribute="trailing" secondItem="v30-a1-Iek" secondAttribute="trailing" constant="74" id="nAz-R8-fof"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="URD-Ou-5ys"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mff-wX-NJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-479.19999999999999" y="-325.18740629685158"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="fCT-7g-u1b">
+            <objects>
+                <viewController id="XNC-zW-56G" customClass="SecondViewController" customModule="miniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PrS-7C-ztb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pretzel-Avalanche-Chocolate-Fudge-Recipe-7-700x1050" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-Bh-w25">
+                                <rect key="frame" x="-162.5" y="-801" width="700" height="1050"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salty and Sweet Comboes?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBJ-gr-GYt">
+                                <rect key="frame" x="16" y="259" width="343" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkk-Yw-abB">
+                                <rect key="frame" x="150" y="322" width="75" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Yum!">
+                                    <color key="titleColor" red="0.45087642766497471" green="0.33755268919273462" blue="0.22717840360506358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yumClicked:" destination="XNC-zW-56G" eventType="touchUpInside" id="EWN-tl-pym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-Hz-iHF">
+                                <rect key="frame" x="320" y="574" width="30" height="44"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nBi-6P-9xc" kind="show" id="0Lt-VP-k5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h25-4G-mzz">
+                                <rect key="frame" x="139" y="455" width="97" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Um, ewwww">
+                                    <color key="titleColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ewClicked:" destination="XNC-zW-56G" eventType="touchUpInside" id="g1O-uF-KMm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCL-Mv-Dh5">
+                                <rect key="frame" x="144" y="387" width="87" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Eh">
+                                    <color key="titleColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ehClicked:" destination="XNC-zW-56G" eventType="touchUpInside" id="Zi8-QJ-Bly"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eN-p1-hhd">
+                                <rect key="frame" x="175" y="535" width="24" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9346732497215271" green="0.81593203544616699" blue="0.68935102224349976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QBJ-gr-GYt" firstAttribute="leading" secondItem="GwI-dX-PHc" secondAttribute="leading" constant="16" id="2hg-9H-K4Z"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="Fkk-Yw-abB" secondAttribute="trailing" constant="150" id="6iN-gO-tMb"/>
+                            <constraint firstItem="h25-4G-mzz" firstAttribute="top" secondItem="HCL-Mv-Dh5" secondAttribute="bottom" constant="20" id="9cF-5s-jrA"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="ovx-Hz-iHF" secondAttribute="trailing" constant="25" id="FfJ-Gt-9ez"/>
+                            <constraint firstItem="h25-4G-mzz" firstAttribute="leading" secondItem="GwI-dX-PHc" secondAttribute="leading" constant="139" id="Fmo-Ve-2G0"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="bottom" secondItem="9eN-p1-hhd" secondAttribute="bottom" constant="92" id="GIt-kM-oVr"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="9eN-p1-hhd" secondAttribute="trailing" constant="176" id="JvL-Be-ddh"/>
+                            <constraint firstItem="HCL-Mv-Dh5" firstAttribute="top" secondItem="Fkk-Yw-abB" secondAttribute="bottom" constant="22" id="PLx-z0-8cp"/>
+                            <constraint firstItem="Fkk-Yw-abB" firstAttribute="leading" secondItem="GwI-dX-PHc" secondAttribute="leading" constant="150" id="PPK-iF-A1H"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="bottom" secondItem="ovx-Hz-iHF" secondAttribute="bottom" constant="29" id="R8h-oL-J2R"/>
+                            <constraint firstItem="nFM-Bh-w25" firstAttribute="centerX" secondItem="PrS-7C-ztb" secondAttribute="centerX" id="S9f-uN-egQ"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="h25-4G-mzz" secondAttribute="trailing" constant="139" id="Ufy-lP-uG0"/>
+                            <constraint firstItem="QBJ-gr-GYt" firstAttribute="top" secondItem="nFM-Bh-w25" secondAttribute="bottom" constant="10" id="Uvd-Fe-dsy"/>
+                            <constraint firstItem="ovx-Hz-iHF" firstAttribute="top" secondItem="QBJ-gr-GYt" secondAttribute="bottom" constant="267" id="WbB-TQ-gzq"/>
+                            <constraint firstItem="9eN-p1-hhd" firstAttribute="leading" secondItem="GwI-dX-PHc" secondAttribute="leading" constant="175" id="iGY-ue-ko5"/>
+                            <constraint firstItem="HCL-Mv-Dh5" firstAttribute="leading" secondItem="GwI-dX-PHc" secondAttribute="leading" constant="144" id="j7B-4r-j8Y"/>
+                            <constraint firstItem="9eN-p1-hhd" firstAttribute="top" secondItem="h25-4G-mzz" secondAttribute="bottom" constant="32" id="mVD-dY-34O"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="QBJ-gr-GYt" secondAttribute="trailing" constant="16" id="vhv-qp-gA6"/>
+                            <constraint firstItem="GwI-dX-PHc" firstAttribute="trailing" secondItem="HCL-Mv-Dh5" secondAttribute="trailing" constant="144" id="xvl-rT-QSI"/>
+                            <constraint firstItem="Fkk-Yw-abB" firstAttribute="top" secondItem="QBJ-gr-GYt" secondAttribute="bottom" constant="10" id="z4e-Yv-qUp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GwI-dX-PHc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nD5-GI-Gj0"/>
+                    <connections>
+                        <outlet property="alert1" destination="9eN-p1-hhd" id="jx7-fa-DWM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8m-g4-KhY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199.19999999999999" y="-326.08695652173918"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="QWK-3f-k0K">
+            <objects>
+                <viewController id="nBi-6P-9xc" customClass="ThirdViewController" customModule="miniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nkZ-gq-MfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vanilla or Chocolate Ice Cream?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlf-2O-r3Y">
+                                <rect key="frame" x="5" y="441" width="375" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkX-dY-vHE">
+                                <rect key="frame" x="155" y="497" width="65" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Vanilla">
+                                    <color key="titleColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="vanillaClicked:" destination="nBi-6P-9xc" eventType="touchUpInside" id="nyb-YS-y84"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV2-Wh-b6i">
+                                <rect key="frame" x="143" y="584" width="83" height="48"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Chococlate">
+                                    <color key="titleColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chocoClicked:" destination="nBi-6P-9xc" eventType="touchUpInside" id="Cl4-zC-g3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1c-eW-bwe">
+                                <rect key="frame" x="138" y="629" width="98" height="18"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="15"/>
+                                <color key="textColor" red="0.45087642770000003" green="0.33755268919999998" blue="0.2271784036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="101-1010010_chocolate-and-vanilla-blue-bell-cones-vanilla-and" translatesAutoresizingMaskIntoConstraints="NO" id="vOb-pS-xfX">
+                                <rect key="frame" x="5" y="-200" width="365" height="640"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bal-3i-Gv0">
+                                <rect key="frame" x="313" y="565" width="30" height="62"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JOc-e0-woa" kind="show" id="JJr-Z7-6Lz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9346732497215271" green="0.81593203544616699" blue="0.68935102224349976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9AK-aL-a4c" firstAttribute="trailing" secondItem="bkX-dY-vHE" secondAttribute="trailing" constant="155" id="4Z1-wh-H5J"/>
+                            <constraint firstItem="Rlf-2O-r3Y" firstAttribute="trailing" secondItem="9AK-aL-a4c" secondAttribute="trailing" constant="5" id="6L8-Q6-bzq"/>
+                            <constraint firstItem="9AK-aL-a4c" firstAttribute="trailing" secondItem="vOb-pS-xfX" secondAttribute="trailing" constant="5" id="8PN-o9-4A3"/>
+                            <constraint firstItem="vOb-pS-xfX" firstAttribute="leading" secondItem="9AK-aL-a4c" secondAttribute="leading" constant="5" id="IIi-Kl-wFt"/>
+                            <constraint firstItem="9AK-aL-a4c" firstAttribute="trailing" secondItem="bal-3i-Gv0" secondAttribute="trailing" constant="32" id="M89-KU-8Oa"/>
+                            <constraint firstItem="9AK-aL-a4c" firstAttribute="bottom" secondItem="bal-3i-Gv0" secondAttribute="bottom" constant="20" id="ceT-QM-ANI"/>
+                            <constraint firstItem="bal-3i-Gv0" firstAttribute="leading" secondItem="x1c-eW-bwe" secondAttribute="trailing" constant="77" id="eCB-Xj-yC1"/>
+                            <constraint firstItem="x1c-eW-bwe" firstAttribute="bottom" secondItem="9AK-aL-a4c" secondAttribute="bottom" id="f9W-5C-6xS"/>
+                            <constraint firstItem="IV2-Wh-b6i" firstAttribute="leading" secondItem="9AK-aL-a4c" secondAttribute="leading" constant="143" id="i5e-rF-gNv"/>
+                            <constraint firstItem="bkX-dY-vHE" firstAttribute="top" secondItem="Rlf-2O-r3Y" secondAttribute="bottom" constant="8" id="qFK-aE-G2O"/>
+                            <constraint firstItem="bal-3i-Gv0" firstAttribute="leading" secondItem="IV2-Wh-b6i" secondAttribute="trailing" constant="87" id="r5s-KF-vvu"/>
+                            <constraint firstItem="bal-3i-Gv0" firstAttribute="top" secondItem="Rlf-2O-r3Y" secondAttribute="bottom" constant="76" id="vZE-EL-syT"/>
+                            <constraint firstItem="bkX-dY-vHE" firstAttribute="leading" secondItem="9AK-aL-a4c" secondAttribute="leading" constant="155" id="vrp-Oe-1P9"/>
+                            <constraint firstItem="Rlf-2O-r3Y" firstAttribute="leading" secondItem="9AK-aL-a4c" secondAttribute="leading" constant="5" id="wCI-n9-BYY"/>
+                            <constraint firstItem="x1c-eW-bwe" firstAttribute="top" secondItem="IV2-Wh-b6i" secondAttribute="bottom" constant="-3" id="x0y-cg-Tae"/>
+                            <constraint firstItem="bal-3i-Gv0" firstAttribute="leading" secondItem="IV2-Wh-b6i" secondAttribute="trailing" constant="87" id="xkd-94-f3O"/>
+                            <constraint firstItem="vOb-pS-xfX" firstAttribute="top" secondItem="9AK-aL-a4c" secondAttribute="top" constant="-200" id="yJc-zD-uq4"/>
+                            <constraint firstItem="Rlf-2O-r3Y" firstAttribute="top" secondItem="vOb-pS-xfX" secondAttribute="bottom" constant="1" id="yTJ-hA-QlC"/>
+                            <constraint firstItem="x1c-eW-bwe" firstAttribute="leading" secondItem="9AK-aL-a4c" secondAttribute="leading" constant="138" id="yx3-eG-nFK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9AK-aL-a4c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z0X-Ya-06A"/>
+                    <connections>
+                        <outlet property="alert2" destination="x1c-eW-bwe" id="LpB-Dr-Hlg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umT-60-HCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-326.08695652173918"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="4NF-Uz-diK">
+            <objects>
+                <viewController id="JOc-e0-woa" customClass="FourthViewController" customModule="miniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DBy-dl-6Br">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzL-Pd-uGG">
+                                <rect key="frame" x="165" y="436" width="35" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cake"/>
+                                <connections>
+                                    <action selector="cakeClicked:" destination="JOc-e0-woa" eventType="touchUpInside" id="qao-o4-rr1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-QQ-QxY">
+                                <rect key="frame" x="149" y="470" width="67" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <state key="normal" title="Frosting"/>
+                                <connections>
+                                    <action selector="frostingClicked:" destination="JOc-e0-woa" eventType="touchUpInside" id="nFm-pQ-XkW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTI-pK-acc">
+                                <rect key="frame" x="170" y="514" width="17" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake or Frosting?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7y9-8w-y71">
+                                <rect key="frame" x="92" y="400" width="191" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.77853221620000002" blue="0.59088800470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vanilla-Cupcakes-3" translatesAutoresizingMaskIntoConstraints="NO" id="2Kv-8L-zvc">
+                                <rect key="frame" x="100" y="-800" width="175" height="1800"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7y9-8w-y71" firstAttribute="leading" secondItem="LJg-hc-J0b" secondAttribute="leading" constant="92" id="8OY-Cf-b5X"/>
+                            <constraint firstItem="LJg-hc-J0b" firstAttribute="trailing" secondItem="7y9-8w-y71" secondAttribute="trailing" constant="92" id="BKc-5F-h5B"/>
+                            <constraint firstItem="2Kv-8L-zvc" firstAttribute="top" secondItem="LJg-hc-J0b" secondAttribute="top" constant="-800" id="hvz-YD-j2c"/>
+                            <constraint firstItem="2Kv-8L-zvc" firstAttribute="leading" secondItem="LJg-hc-J0b" secondAttribute="leading" constant="100" id="lYe-O8-pip"/>
+                            <constraint firstItem="7y9-8w-y71" firstAttribute="top" secondItem="2Kv-8L-zvc" secondAttribute="bottom" constant="-600" id="meX-mT-EiG"/>
+                            <constraint firstItem="LJg-hc-J0b" firstAttribute="trailing" secondItem="2Kv-8L-zvc" secondAttribute="trailing" constant="100" id="qsZ-pQ-Wma"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LJg-hc-J0b"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o9T-dA-Fha"/>
+                    <connections>
+                        <outlet property="alert3" destination="mTI-pK-acc" id="4Xf-26-FmT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTt-S6-WOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="-225.33733133433284"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="101-1010010_chocolate-and-vanilla-blue-bell-cones-vanilla-and" width="733" height="640"/>
+        <image name="Pretzel-Avalanche-Chocolate-Fudge-Recipe-7-700x1050" width="700" height="1050"/>
+        <image name="Vanilla-Cupcakes-3" width="1200" height="1800"/>
+        <image name="desserts-background_1067-57" width="626" height="626"/>
+    </resources>
 </document>
